@@ -1,0 +1,22 @@
+{
+  "name": "Terminal Lexicon",
+  "short_name": "Lexicon",
+  "description": "Offline-first minimalist language lexicon",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#00ff66",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f4d6.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/512x512/1f4d6.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
