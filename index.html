@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINAL_LEXICON //_</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <header class="terminal-header">
+        <div class="logo">LEXICON_OS v1.0.0</div>
+        <div class="shortcuts-hint">Ctrl+M: Mask | N: New Word</div>
+    </header>
+
+    <main class="terminal-container">
+        <section class="sidebar">
+            <div class="section-title">[ DOSSIERS_ ]</div>
+            <div class="actions-bar">
+                <button id="btn-new-folder">+ DOSSIER</button>
+            </div>
+            <div id="breadcrumbs" class="breadcrumbs">ROOT</div>
+            <ul id="folder-list" class="terminal-list"></ul>
+        </section>
+
+        <section class="content">
+            <div class="section-title">[ LEXIQUE_ ]</div>
+            <div class="actions-bar">
+                <button id="btn-new-word">+ MOT</button>
+                <button id="btn-toggle-mask" class="danger">MASK [OFF]</button>
+                <button id="btn-export">EXPORT CSV</button>
+                <label class="file-label">
+                    IMPORT CSV
+                    <input type="file" id="import-csv" accept=".csv" style="display:none;">
+                </label>
+                <button id="btn-delete-selected" class="danger">DEL_SEL</button>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="terminal-table">
+                    <thead>
+                        <tr>
+                            <th width="40"><input type="checkbox" id="select-all"></th>
+                            <th>MOT</th>
+                            <th>TRADUCTION</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lexicon-body"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
